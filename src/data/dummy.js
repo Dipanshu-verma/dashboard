@@ -403,7 +403,7 @@ export const customersGrid = [
     textAlign: 'Center' },
   { field: 'Status',
     headerText: 'Status',
-    width: '130',
+    width: '125',
     format: 'yMd',
     textAlign: 'Center',
     template: customerGridStatus },
@@ -421,12 +421,12 @@ export const customersGrid = [
 
   { field: 'Location',
     headerText: 'Location',
-    width: '150',
+    width: '130',
     textAlign: 'Center' },
 
   { field: 'CustomerID',
     headerText: 'Customer ID',
-    width: '120',
+    width: '110',
     textAlign: 'Center',
     isPrimaryKey: true,
   },
@@ -880,7 +880,7 @@ export const ordersGrid = [
   {
     field: 'OrderItems',
     headerText: 'Item',
-    width: '150',
+    width: '120',
     editType: 'dropdownedit',
     textAlign: 'Center',
   },
@@ -907,14 +907,14 @@ export const ordersGrid = [
   {
     field: 'OrderID',
     headerText: 'Order ID',
-    width: '120',
+    width: '110',
     textAlign: 'Center',
   },
 
   {
     field: 'Location',
     headerText: 'Location',
-    width: '150',
+    width: '120',
     textAlign: 'Center',
   },
 ];
