@@ -9,7 +9,7 @@ import { Ecommerce, Orders, Calendar, Employees, Stacked, Pyramid, Customers, Ka
 import {useStateContext } from "./contexts/ContextProvider";
 function App() {
    
-   const {activeMenu}= useStateContext()
+   const {activeMenu,themeSettings,setThemeSettings}= useStateContext()
    
   // const activemenu = true;
   return (
@@ -25,7 +25,9 @@ function App() {
                   background: "blue",
                   color: "#fff",
                   borderRadius: "50%",
+                  
                 }}
+                onClick={()=> setThemeSettings(true)}
               >
                 <FiSettings />
               </button>
@@ -50,6 +52,10 @@ function App() {
           
 
           <div>
+
+        {
+          themeSettings&& <ThemeSettings/>
+        } 
             <Routes>
               {/* dashboard  */}
               <Route path="/" element={<Ecommerce/>} />

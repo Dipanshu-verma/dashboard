@@ -15,7 +15,7 @@ import {
 } from "../data/dummy";
 import { useStateContext } from "../contexts/ContextProvider";
 const Ecommerce = () => {
-  console.log(earningData);
+  const {currentColor}  = useStateContext()
   return (
     <div className="mt-12">
       <div className="flex flex-col lg:flex-row lg:justify-center lg:flex-nowrap">
@@ -29,7 +29,7 @@ const Ecommerce = () => {
           <div className="mt-6">
             <Button
               color="white"
-              bgColor="black"
+              bgColor={currentColor}
               text="Download"
               borderRadius="10px"
               size="md"
@@ -113,7 +113,7 @@ const Ecommerce = () => {
               <div className="mt-10">
               <Button
               color="white"
-              bgColor="black"
+              bgColor={currentColor}
               text="Download Reports"
               borderRadius="10px"
               size="md"
