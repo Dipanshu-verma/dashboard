@@ -8,7 +8,7 @@ import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 import avatar from "../data/avatar.jpg";
 import { useStateContext } from "../contexts/ContextProvider";
 import { Cart, Chat, Notification, UserProfile } from '.';
-
+import myimg from "./profileImg.jpeg"
 const NavButton = ({ title, customFunc, icon, color, dotColor }) => {
   return (
     <TooltipComponent content={title} position="BottomCenter">
@@ -88,13 +88,13 @@ return ()=> window.removeEventListener('resize', handleResize)
           >
             <img
               className="rounded-full w-8 h-8"
-              src={avatar}
+              src={myimg}
               alt="user-profile"
             />
             <p>
               <span className="text-gray-400 text-14 ">Hi,</span>
               <span className="text-gray-400 text-14 ml-1 font-bold">
-                Dhruv
+                Dipanshu
               </span>
             </p>
 
