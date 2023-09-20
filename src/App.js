@@ -9,21 +9,20 @@ import { Ecommerce, Orders, Calendar, Employees, Stacked, Pyramid, Customers, Ka
 import {useStateContext } from "./contexts/ContextProvider";
 function App() {
    
-   const {activeMenu,themeSettings,setThemeSettings}= useStateContext()
+   const {activeMenu,themeSettings,setThemeSettings,currentColor,currentMode}= useStateContext()
    
   // const activemenu = true;
   return (
-    <div>
+    <div className={currentMode==="Dark"?"dark":""}>
       <BrowserRouter>
         <div className="flex relativ dark:bg-main-dark-bg">
-          <div className="fixed right-4 bottom-4" style={{ zIndex: "1000" }}>
+          <div className="fixed right-4 bottom-4" style={{ zIndex:"1000" }}>
             <TooltipComponent content="Settings" position="top">
               <button
                 type="button"
                 className="text-3xl p-3 hover:drop-shadow-xl hover:bg-light-gray"
                 style={{
-                  background: "blue",
-                  color: "#fff",
+                  background:currentColor,
                   borderRadius: "50%",
                   
                 }}
@@ -54,7 +53,7 @@ function App() {
           <div>
 
         {
-          themeSettings&& <ThemeSettings/>
+          themeSettings && <ThemeSettings/>
         } 
             <Routes>
               {/* dashboard  */}

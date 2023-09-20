@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Button = ({ bgColor, color,  text,size, borderRadius}) => {
+const Button = ({ bgColor, color, icon, text,size, borderRadius}) => {
   return (
     <button
       type="button"
@@ -8,7 +8,7 @@ const Button = ({ bgColor, color,  text,size, borderRadius}) => {
       style={{ backgroundColor: bgColor, color, borderRadius }}
       className={` text-${size} p-3 hover:drop-shadow-xl`}
     >
-       {text}
+       {icon} {text}
     </button>
   )
 }
