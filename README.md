@@ -1,5 +1,5 @@
 # Getting Started with Create React App
-live link : magenta-dashboard-lamington-d4750e.netlify.app
+live link : https://snazzy-nasturtium-dashboard-abdbe5.netlify.app/
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
